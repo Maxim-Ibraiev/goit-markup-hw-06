@@ -416,7 +416,8 @@ textarea[name="comment"] {
 } 
 
 .comment:hover textarea,
-.comment textarea:focus {
+.comment textarea:focus,
+.comment textarea:not(:placeholder-shown) {
   border-color: var(--color-accent);
   outline: none;
 }
