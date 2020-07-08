@@ -387,7 +387,7 @@ textarea[name="comment"] {
 
 
 .modal-label:hover span,
-.modal-label:focus span,
+.modal-label:focus-within span,
 .modal-label input:not(:placeholder-shown) ~ span {
   animation: placeholder 500ms ease forwards;
 }
@@ -406,7 +406,7 @@ textarea[name="comment"] {
 }
 
 .comment:hover .placeholder,
-.comment:focus .placeholder, 
+.comment:focus-within .placeholder, 
 .comment textarea:not(:placeholder-shown) ~ span {
   animation: none;
 
