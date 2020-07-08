@@ -371,7 +371,7 @@ textarea[name="comment"] {
 
   animation: none;
 
-  transition: transform 250ms ease;
+  transition: transform var(--animation) var(--cubic-bezier);
   transform: translateX(16px);
 }
 
@@ -382,7 +382,7 @@ textarea[name="comment"] {
 }
 
 .modal-label span {
-  animation: placeholder-reverse 250ms ease forwards;
+  animation: placeholder-reverse var(--animation) var(--cubic-bezier) forwards;
 }
 
 
@@ -414,6 +414,15 @@ textarea[name="comment"] {
 
   color: var(--color-accent);
 } 
+
+.modal-label svg {
+  transition: fill var(--animation) var(--cubic-bezier);
+}
+
+.modal-label input,
+.modal-label textarea {
+  transition: border-color var(--animation) var(--cubic-bezier);
+}
 
 .comment:hover textarea,
 .comment textarea:focus,
