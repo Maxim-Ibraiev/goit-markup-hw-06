@@ -375,7 +375,6 @@ textarea[name="comment"] {
   transform: translateX(16px);
 }
 
-.modal-label:hover svg,
 .modal-label input:focus + svg,
 .modal-label input:not(:placeholder-shown) + svg {
   fill: var(--color-accent);
@@ -386,7 +385,6 @@ textarea[name="comment"] {
 }
 
 
-.modal-label:hover span,
 .modal-label:focus-within span,
 .modal-label input:not(:placeholder-shown) ~ span {
   animation: placeholder 500ms ease forwards;
@@ -397,7 +395,6 @@ textarea[name="comment"] {
   outline: none;
 }
 
-.modal-label:hover input,
 .modal-label input:focus ,
 .modal-label input:not(:placeholder-shown) {
   border: 1px solid var(--color-accent);
@@ -405,7 +402,6 @@ textarea[name="comment"] {
   outline: none;
 }
 
-.comment:hover .placeholder,
 .comment:focus-within .placeholder, 
 .comment textarea:not(:placeholder-shown) ~ span {
   animation: none;
@@ -424,7 +420,6 @@ textarea[name="comment"] {
   transition: border-color var(--animation) var(--cubic-bezier);
 }
 
-.comment:hover textarea,
 .comment textarea:focus,
 .comment textarea:not(:placeholder-shown) {
   border-color: var(--color-accent);
